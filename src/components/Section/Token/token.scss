@@ -1,0 +1,183 @@
+@import "../../../global.scss";
+.token_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: calc(100vh - 5rem - 99px);
+    padding-top: 5rem;
+    width: 100%;
+    z-index: 10;
+    @include mobile_potrait{
+    }
+    .left{
+        width: 50%;
+
+    }
+    .content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        @include mobile_potrait{
+        }
+        h2{
+            color: #fff;
+            font-size: 30px;
+            margin-bottom: 28px;
+            font-weight: 700;
+            span{
+                color: #F3B343;
+            }
+            @include mobile_potrait{
+                font-size: 30px;
+                margin-bottom: 20px;
+                text-align: center;
+                
+            }
+        }
+        h4{
+            color: #fff;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 16px;
+            span{
+                color: #F3B343;
+            }
+            @include mobile_potrait{
+                font-size: 12px;
+                width: 90%;
+                text-align: center;
+            }
+        }
+    }
+    .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1130px;
+        width: 90%;
+        @include mobile_potrait{
+            flex-direction: column;
+        }
+        .img{
+            max-width: 100%;
+            margin: auto;
+            z-index: 1;
+        }
+        
+        ul{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 0;
+            list-style: none;
+            grid-area: auto;
+            gap: 16px;
+            @include mobile_potrait{
+                flex-direction: column;
+            }
+            li{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.3s ease;
+                cursor: pointer;
+                border: 1px solid #CACACA;
+                border-radius: 15px;
+                box-sizing: border-box;
+                padding: 18px;
+                &:hover{
+                    opacity: 0.6;
+                }
+                h3{
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+                p{
+                    color: #A7A7A7;
+                    font-size: 12px;
+                    width: 100%;
+                    @include mobile_potrait{
+                    }
+                }
+                img{
+                    margin-right: 8px;
+                }
+            }
+            .w_30{
+                width: 30%;
+                @include mobile_potrait{
+                    width: 100%;
+                }
+            }
+        }
+        .left{
+            width: 60%;
+            box-sizing: border-box;
+            padding: 38px 100px;
+            border-right: 1px solid #A7A7A7;
+            display: flex;
+            flex-wrap: wrap;
+            grid-area: auto;
+            gap : 0px 26px;
+            @include mobile_potrait{
+                width: 100%;
+                padding: 20px 30px;
+                border: none;
+                border-bottom: 1px solid #A7A7A7;
+                justify-content: space-between;
+            }
+            h3{
+                color: #fff;
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 18px;
+                width: 100%;
+            }
+        }
+        .right{
+            width: 40%;
+            box-sizing: border-box;
+            padding: 38px 100px;
+            @include mobile_potrait{
+                width: 100%;
+                padding: 20px 30px;
+                
+            }
+            h3{
+                color: #fff;
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 18px;
+            }
+        }
+        span{
+            h4{
+                margin-bottom: 0;
+                @include mobile_potrait{
+                    width: 100%;
+                    text-align: left;
+                }
+            }
+            p{
+                color: #A7A7A7;
+                font-size: 12px;
+                width: 100%;
+                margin-bottom: 18px;
+                @include mobile_potrait{
+                    font-size: 10px;
+                    margin-bottom: 16px;
+                }
+            }
+        }
+        
+    }
+    .border{
+        border: 1px #CACACA solid;
+        border-radius: 16px;
+    }
+    
+}

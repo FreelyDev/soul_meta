@@ -1,0 +1,89 @@
+@import "../../../global.scss";
+.secure_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 5rem;
+    margin-bottom: 5rem;
+    width: 100%;
+    z-index: 10;
+    @include mobile_potrait{
+        margin-bottom: 0;
+    }
+    .content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        @include mobile_potrait{
+        }
+        h2{
+            color: #fff;
+            font-size: 30px ;
+            margin-bottom: min(40px, 2vw) ;
+            span{
+                color: #F3B343;
+            }
+            @include mobile_potrait{
+                font-size: 24px;
+                margin-bottom: 20px;
+                text-align: center;
+            }
+        }
+    }
+    .wrapper{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 1130px;
+        width: 90%;
+        grid-area: auto;
+        gap: 30px;
+        @include mobile_potrait{
+            align-items: center;
+        }
+        
+        
+        .item{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            flex: 1;
+            border: 1px solid #CACACA;
+            border-radius: 15px;
+            box-sizing: border-box;
+            padding: 18px 36px;
+            img{
+                height: 28px;
+                margin-bottom: 12px;
+            }
+            p{
+                color: #fff;
+                font-size: 12px;
+                @include mobile_potrait{
+                    font-size: 16px;
+                    text-align: center;
+                    img{
+                        display: none;
+                    }
+                }
+                a{
+                    color: #fff;
+                }
+            }
+            h3{
+                color: #fff;
+                font-size: 20px;
+                margin-bottom: 12px;
+                @include mobile_potrait{
+                    text-align: center;
+                }
+    
+            }
+        }
+        
+    }
+}

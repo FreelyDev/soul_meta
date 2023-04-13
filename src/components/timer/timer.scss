@@ -1,0 +1,53 @@
+@import "../../global.scss";
+.timer{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    .numbers{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: #fff;
+        flex-direction: row;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 1;
+        margin-bottom: 10px;
+        .number{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 4rem;
+            @include mobile_potrait{
+                min-width: 2rem;
+                min-height: 1.5rem;
+                font-size: 1.5rem;
+            }
+        }
+        
+    }
+    .texts{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .text{
+            font-size: 12px;
+            margin-bottom: 3px;
+            overflow: hidden;
+            color: #fff;
+            min-width: 4rem;
+            font-weight: 600;
+            text-align: center;
+            @include mobile_potrait{
+                font-size: 0.6rem;
+                margin-top: 0vh;
+            }
+            @include mobile_landscape{
+                font-size: 0.6rem;
+                margin-top: 0vh;
+            }
+        }
+    }
+}

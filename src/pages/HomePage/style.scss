@@ -1,0 +1,55 @@
+@import "../../global.scss";
+
+.effect3{
+    position: absolute;
+    width: 60vw;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    @include mobile_potrait{
+        height: 40vh;
+        width: 80vw;
+        top: 80px;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        animation: an-lightning-second2 10s linear 3s infinite;
+        @keyframes an-lightning-second2 {
+            0% {
+                opacity: 0.3;
+            }
+            1.66% {
+                opacity: 1;
+            }
+            1.7% {
+                opacity: 0.3;
+            }
+            2.66% {
+                opacity: 1;
+            }
+            3.2% {
+                opacity: 1;
+            }
+            3.4% {
+                opacity:0.3;
+            }
+            7.8%, 76.9% {
+            }
+            77% {
+                opacity: 1;
+            }
+            78%, 100% {
+                opacity: 0.3;
+            }
+        }
+    }
+}
+
+.select {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 40px);
+    margin-bottom: 5px;
+    
+}

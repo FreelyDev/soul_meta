@@ -1,0 +1,165 @@
+@import "global.scss";
+
+.sections{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background: #000;
+    z-index: 1;
+    overflow: hidden;
+    
+}
+
+.myToast{
+    left: calc(50% - 75px) !important;
+    // width: 300px !important;
+    background: #121212 !important;
+    border: 1px solid #C85380;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: row;
+    >div{
+        color: #fff;
+        width: fit-content !important;
+        display: flex !important;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row !important;
+        font-size: 14px;
+    }
+    
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(180deg, #CD547D 0%, #CD547D 100%);
+    padding : 12px 30px;
+    @include mobile_potrait{
+    }
+    p{
+        font-size: 16px;
+        color: white;
+        @include mobile_potrait{
+        }
+        
+    }
+    
+}
+.button{
+    font-size: MIN(16px, 1vw);
+    padding : 0.5rem 1rem;
+    background: #00000000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    line-height: 1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    color: #fff;
+    border: 1px #fff solid;
+    border-radius: 10px;
+    @include mobile_potrait{
+        font-size: 0.8rem;
+    }
+    
+    &:disabled{
+        background-image: linear-gradient(to right, #a5a5a5, #686868) ;
+        &::before {
+            opacity: 0 !important;
+            z-index: -1 !important;
+        }
+        p{
+            color: #aaa;
+            text-shadow: none;
+        }
+    }
+    &:hover{
+        box-shadow: 0px 0px 8px #fff;
+    }
+    img{
+      margin-right: 8px;
+    }
+    .fas{
+      margin-right: 8px;
+    }
+    p{
+        z-index: 1;
+        color: #fff !important;
+        font-size: MIN(16px, 1vw);
+        font-weight: 600;
+        width: auto !important;
+        margin: 0 !important;
+        @include mobile_potrait{
+            font-size: 0.8rem;
+        }
+        @include mobile_landscape{
+            font-size: 0.8rem;
+        }
+    }
+}
+.mb_5{
+  margin-bottom: 5rem;
+}
+.mb_8{
+  margin-bottom: 8rem;
+}
+.mb_10{
+  margin-bottom: 10rem;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    
+    @media screen and (max-width: 648px) and (orientation: portrait) {
+      height: 3px;
+    }
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #777;
+  border-radius: 5px;
+  
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+
+}
+@keyframes btnAni {
+  0%{
+      transform: rotate(0);
+  }
+  20%{
+      transform: rotate(-10deg);
+  }
+  40%{
+      transform: rotate(10deg);
+  }
+  60%{
+      transform: rotate(-10deg);
+  }
+  80%{
+      transform: rotate(10deg);
+  }
+  100%{
+      transform: rotate(0);
+  }
+}
+ 

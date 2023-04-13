@@ -1,0 +1,211 @@
+@import "../../../global.scss";
+.howToBuy_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: calc(100vh - 5rem - 99px);
+    margin-top: 5rem;
+    width: 100%;
+    z-index: 10;
+    @include mobile_potrait{
+    }
+    .left{
+        width: 50%;
+
+    }
+    .content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        @include mobile_potrait{
+            align-items: center;
+            min-height: 90vh;
+        }
+        h2{
+            color: #fff;
+            font-size: 30px;
+            margin-bottom: 86px;
+            font-weight: 700;
+            span{
+                color: #F3B343;
+            }
+            @include mobile_potrait{
+                font-size: 24px;
+                margin-bottom: 20px;
+                text-align: center;
+                img{
+                    width: 80px;
+                }
+            }
+        }
+    }
+    .wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1130px;
+        width: 90%;
+        @include mobile_potrait{
+            align-items: center;
+            flex-direction: column;
+        }
+        .item{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            @include mobile_potrait{
+                align-items: center;
+                flex-direction: column;
+            }
+            .img{
+                max-width: 90%;
+                margin: auto;
+                z-index: 1;
+                background-color: #000;
+                padding-top: 20px;
+                border-radius: 10px 10px 0px 0px;
+                box-shadow: 5px -5px 5px #00000044;
+                border-right: 1px #888 solid;
+                border-top: 1px #888 solid;
+                border-left: 1px #888 solid;
+            }
+            h3{
+                color: #fff;
+                font-size: 18px;
+                font-weight: 700;
+                span{
+                    color: #F3B343;
+                }
+                @include mobile_potrait{
+                    font-size: 24px;
+                    text-align: center;
+                }
+            }
+            h4{
+                color: #fff;
+                font-size: 14px;
+                font-weight: 700;
+                span{
+                    color: #F3B343;
+                }
+                @include mobile_potrait{
+                    font-size: 18px;
+                }
+            }
+            p{
+                color: #A7A7A7;
+                font-size: 12px;
+                margin-bottom: 16px;
+                width: 100%;
+                @include mobile_potrait{
+                    text-align: center;
+                }
+            }
+            .btns{
+                display: flex;
+                align-items: center;
+                grid-area: auto;
+                gap : 22px;
+                margin-top: 16px;
+                a{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    border: 1px #fff solid;
+                    width: fit-content;
+                    font-size: 14px;
+                    padding: 10px 20px;
+                    line-height: 1;
+                    color: #fff;
+                    font-weight: normal;
+                    transition: all 0.3s ease;
+                    text-decoration: none;
+                    border-radius: 10px;
+                    &:hover{
+                        box-shadow: 0px 0px 8px #fff;
+                    }
+                    @include mobile_potrait{
+                        padding: 10px 20px;
+                        font-size: 16px;
+                    }
+                    img{
+                        margin-right: 8px;
+                    }
+                }
+            }
+        }
+        .effect{
+            width: 50vw;
+            height: 30vw;
+            border-radius: 50%;
+            background: radial-gradient(50% 50% at 50% 50%, rgba(187, 184, 177, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+            position: absolute;
+            filter: blur(50px);
+            right: 0;
+            opacity: 0.8;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .right{
+            background-color: #F3B343;
+            border-radius: 16px;
+            position: relative;
+            padding-top: 82px;
+            @include mobile_potrait{
+                margin-top: 80px;
+                padding-top: 60px;
+            }
+            .wallet{
+                position: absolute;
+                display: flex;
+                align-items: center;
+                top: -31px;
+                right: 70px;
+                grid-area: auto;
+                gap: 20px;
+                div{
+                    background-color: #fff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    width: 62px;
+                    height: 62px;
+                    border-radius: 4px;
+                    box-shadow: 5px 5px 5px #00000032;
+                    img{
+                        height: 31px;
+                    }
+                    h5{
+                        font-size: 8px;
+                    }
+                }
+            }
+            .coin_list{
+                position: absolute;
+                bottom: -20px;
+                left: 20px;
+                z-index: 1;
+                display: flex;
+                align-items: center;
+                grid-area: auto;
+                gap : 10px;
+                img{
+                    border: 2px #fff solid;
+                    border-radius: 50%;
+                    box-shadow: 5px 5px 5px #ffffff66;
+                    @include mobile_potrait{
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+
+            }
+        }
+    }
+}
